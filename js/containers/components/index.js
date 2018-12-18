@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 15:24:19
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-18 18:13:24
+ * @Last Modified time: 2018-12-18 18:38:02
  */
 
 'use strict';
@@ -22,7 +22,6 @@ export default class Index extends Component {
   }
 
   render () {
-    console.log(this.props);
     return (
       <FlatList
         style={styles.container}
