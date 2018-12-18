@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 19:39:47
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-18 17:13:32
+ * @Last Modified time: 2018-12-18 18:02:11
  */
 
 'use strict';
@@ -23,7 +23,8 @@ export default class ComponentListCell extends Component {
 
   render () {
     let {viewDescription} = this.state;
-    let {data} = this.props;
+    let {data, morePress} = this.props;
+    console.log(this.props);
     return (
       <View style={styles.container}>
         {/* 列表单元 */}
@@ -36,7 +37,7 @@ export default class ComponentListCell extends Component {
             <View style={styles.nameText}><Text>{data.name}</Text></View>
             <View style={styles.moreIcon}><Text>*</Text></View>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.rightPart}>
+          <TouchableOpacity style={styles.rightPart} onPress={morePress}>
             <Text>更多</Text>
           </TouchableOpacity>
         </View>
