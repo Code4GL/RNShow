@@ -1,43 +1,36 @@
 /*
- * @Author: Code4GL 
- * @Date: 2018-12-17 15:24:19 
+ * @Author: Code4GL
+ * @Date: 2018-12-17 15:24:19
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-17 19:51:40
+ * @Last Modified time: 2018-12-18 14:42:36
  */
+
 'use strict';
 
 import React, {Component} from 'react';
 import {StyleSheet, FlatList} from 'react-native';
-import ComponentListCell from './../../components/component/ComponentListCell';
-import {ComponentList} from './../../data/ComponentList'; 
+import ComponentListCell from '../../components/component/ComponentListCell';
+import ComponentList from '../../data/ComponentList';
 
 export default class Index extends Component {
-    constructor(props){
-        super(props)
-    }
 
-    renderItems (data){
-        return(
-            <ComponentListCell data={data}>
-            </ComponentListCell>
-        )
-    }
+  renderItems (data) {
+    return (
+      <ComponentListCell data={data.item} />
+    );
+  }
 
-    render() {
-        return (
-            <FlatList
-                data={ComponentList} 
-                renderItem={this.renderItems}>
-            </FlatList>
-        );
-    }
+  render () {
+    return (
+      <FlatList
+        style={styles.container}
+        data={ComponentList}
+        renderItem={this.renderItems}
+      />
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  }
+  container: {flex: 1}
 });
