@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 19:39:47
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-19 14:48:12
+ * @Last Modified time: 2018-12-19 15:45:40
  */
 
 'use strict';
@@ -76,7 +76,6 @@ const styles = StyleSheet.create({
   // 列表单元
   listCell: {
     height: 50,
-    backgroundColor: 'rgba(255,255,255,1)',
     justifyContent: 'center',
     alignItems: 'center'
   },
@@ -142,7 +141,7 @@ const styles = StyleSheet.create({
   // 中文详情
   descriptionCN: {
     flexDirection: 'row',
-    backgroundColor: 'rgba(228,231,236,1)'
+    backgroundColor: 'rgba(228,231,236,0.8)'
   },
   chineseTitle: {
     width: '15%',
