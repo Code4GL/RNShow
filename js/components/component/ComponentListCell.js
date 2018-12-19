@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 19:39:47
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-18 18:38:01
+ * @Last Modified time: 2018-12-19 14:48:12
  */
 
 'use strict';
@@ -27,19 +27,20 @@ export default class ComponentListCell extends Component {
     return (
       <View style={styles.container}>
         {/* 列表单元 */}
-        <View style={styles.listCell}>
-          <TouchableOpacity
-            style={styles.leftPart}
-            onPress={() => { this.setState({viewDescription: !viewDescription}); }}
-          >
-            <View style={styles.keyText}><Text>{data.key}</Text></View>
-            <View style={styles.nameText}><Text>{data.name}</Text></View>
-            <View style={styles.moreIcon}><Text>*</Text></View>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.rightPart} onPress={morePress}>
-            <Text>更多</Text>
-          </TouchableOpacity>
-        </View>
+        <TouchableOpacity
+          style={styles.listCell}
+          onPress={() => { this.setState({viewDescription: !viewDescription}); }}
+        >
+          <View style={styles.listCellIn}>
+            <View style={styles.key}><Text style={styles.keyText}>{data.key}</Text></View>
+            <View style={styles.name}><Text style={styles.nameText}>{data.name}</Text></View>
+            <View style={styles.moreIcon}><Text style={styles.moreIconText}>|</Text></View>
+
+            <TouchableOpacity style={styles.more} onPress={morePress}>
+              <Text style={styles.moreText}>更多</Text>
+            </TouchableOpacity>
+          </View>
+        </TouchableOpacity>
         {/* 组件中英文描述 */}
         {viewDescription
           ? (
@@ -74,33 +75,47 @@ const styles = StyleSheet.create({
   },
   // 列表单元
   listCell: {
-    flexDirection: 'row',
-    justifyContent: 'space-between'
-  },
-  leftPart: {
-    height: 40,
-    width: '80%',
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: 'rgba(178,178,178,0.1)'
-  },
-  keyText: {
-    width: '15%',
+    height: 50,
+    backgroundColor: 'rgba(255,255,255,1)',
     justifyContent: 'center',
     alignItems: 'center'
   },
-  nameText: {
-    width: '80%'
+  listCellIn: {
+    height: 50,
+    width: '99%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  },
+  key: {
+    width: '10%',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  name: {
+    width: '75%'
   },
   moreIcon: {
-    width: '5%'
+    width: '1%'
   },
-  rightPart: {
+  more: {
     height: 40,
-    width: '20%',
+    width: '14%',
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'orange'
+    alignItems: 'center'
+  },
+  keyText: {
+    // fontWeight: 'bold'
+  },
+  nameText: {
+    fontWeight: 'bold'
+  },
+  moreIconText: {
+    color: 'rgba(180,180,180,1)'
+  },
+  moreText: {
+    color: 'rgba(50,160,248,1)',
+    fontWeight: 'bold'
   },
   detail: {
     backgroundColor: 'white'
@@ -108,7 +123,7 @@ const styles = StyleSheet.create({
   // 英文详情
   description: {
     flexDirection: 'row',
-    backgroundColor: 'lightgray'
+    backgroundColor: 'rgba(228,231,236,0.5)'
   },
   englishTitle: {
     width: '15%',
@@ -127,7 +142,7 @@ const styles = StyleSheet.create({
   // 中文详情
   descriptionCN: {
     flexDirection: 'row',
-    backgroundColor: 'lightblue'
+    backgroundColor: 'rgba(228,231,236,1)'
   },
   chineseTitle: {
     width: '15%',
