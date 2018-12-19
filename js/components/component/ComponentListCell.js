@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 19:39:47
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-19 15:49:35
+ * @Last Modified time: 2018-12-19 15:58:16
  */
 
 'use strict';
@@ -33,7 +33,7 @@ export default class ComponentListCell extends Component {
         >
           <View style={styles.listCellIn}>
             <View style={styles.key}><Text style={styles.keyText}>{data.key}</Text></View>
-            <View style={styles.name}><Text style={styles.nameText}>{data.name}</Text></View>
+            <View style={styles.name}><Text style={styles.nameText} selectable>{data.name}</Text></View>
             <View style={styles.moreIcon}><Text style={styles.moreIconText}>|</Text></View>
 
             <TouchableOpacity style={styles.more} onPress={morePress}>
@@ -50,7 +50,7 @@ export default class ComponentListCell extends Component {
                   <Text style={styles.englishTitleText}>English:</Text>
                 </View>
                 <View style={styles.english}>
-                  <Text style={styles.englishText}>{data.description}</Text>
+                  <Text style={styles.englishText} selectable>{data.description}</Text>
                 </View>
               </View>
               <View style={styles.descriptionCN}>
@@ -58,7 +58,7 @@ export default class ComponentListCell extends Component {
                   <Text style={styles.chineseTitleText}>中文:</Text>
                 </View>
                 <View style={styles.chinese}>
-                  <Text style={styles.chineseText}>{data.descriptionCN}</Text>
+                  <Text style={styles.chineseText} selectable>{data.descriptionCN}</Text>
                 </View>
               </View>
             </View>
