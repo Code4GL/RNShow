@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 19:39:47
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-19 15:45:40
+ * @Last Modified time: 2018-12-19 15:49:35
  */
 
 'use strict';
@@ -132,11 +132,11 @@ const styles = StyleSheet.create({
     width: '85%'
   },
   englishTitleText: {
-    lineHeight: 30,
+    lineHeight: 20,
     fontWeight: 'bold'
   },
   englishText: {
-    lineHeight: 30
+    lineHeight: 20
   },
   // 中文详情
   descriptionCN: {
@@ -151,10 +151,10 @@ const styles = StyleSheet.create({
     width: '85%'
   },
   chineseTitleText: {
-    lineHeight: 30,
+    lineHeight: 20,
     fontWeight: 'bold'
   },
   chineseText: {
-    lineHeight: 30
+    lineHeight: 20
   }
 });
