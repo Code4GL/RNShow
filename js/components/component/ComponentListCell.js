@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 19:39:47
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-19 15:58:16
+ * @Last Modified time: 2018-12-19 16:10:51
  */
 
 'use strict';
@@ -33,7 +33,9 @@ export default class ComponentListCell extends Component {
         >
           <View style={styles.listCellIn}>
             <View style={styles.key}><Text style={styles.keyText}>{data.key}</Text></View>
-            <View style={styles.name}><Text style={styles.nameText} selectable>{data.name}</Text></View>
+            <View style={styles.name}>
+              <Text style={styles.nameText} selectable>{data.name}</Text>
+            </View>
             <View style={styles.moreIcon}><Text style={styles.moreIconText}>|</Text></View>
 
             <TouchableOpacity style={styles.more} onPress={morePress}>

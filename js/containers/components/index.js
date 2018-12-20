@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 15:24:19
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-19 15:30:00
+ * @Last Modified time: 2018-12-20 10:58:54
  */
 
 'use strict';
@@ -12,7 +12,7 @@ import {
   StyleSheet, FlatList, View, Platform, Alert
 } from 'react-native';
 import ComponentListCell from '../../components/component/ComponentListCell';
-import ComponentList from '../../data/ComponentList';
+import ComponentList from '../../data/components/ComponentList';
 
 export default class Index extends Component {
 
@@ -32,13 +32,13 @@ export default class Index extends Component {
         morePress={() => {
           if (Platform.OS === 'ios') {
             if (data.item.platform === 'all' || data.item.platform === 'ios') {
-              return navigation.navigate(data.item.route);
+              return navigation.navigate('ComponentDetail', { detail: data.item});
             } else {
               return Alert.alert('该组件不支持IOS系统，请在Android系统上查看！');
             }
           } else {
             if (data.item.platform === 'all' || data.item.platform === 'android') {
-              return navigation.navigate(data.item.route);
+              return navigation.navigate('ComponentDetail', { detail: data.item});
             } else {
               return Alert.alert('该组件不支持Android系统，请在IOS系统上查看！');
             }
