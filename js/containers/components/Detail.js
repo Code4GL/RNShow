@@ -2,14 +2,14 @@
  * @Author: Code4GL
  * @Date: 2018-12-19 17:46:15
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-21 16:10:33
+ * @Last Modified time: 2018-12-21 16:13:18
  */
 
 'use strict';
 
 import React, {Component} from 'react';
 import {
-  StyleSheet, View, Text, TouchableOpacity
+  StyleSheet, View, Text, TouchableOpacity, ScrollView
 } from 'react-native';
 
 export default class Detail extends Component {
@@ -17,7 +17,7 @@ export default class Detail extends Component {
   render () {
     const { navigation } = this.props;
     return (
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <View style={styles.title}>
           <Text style={styles.titleText}>{navigation.state.params.detail.name}</Text>
         </View>
@@ -41,17 +41,19 @@ export default class Detail extends Component {
           </View>
         </View>
         {/* 注意信息展示 */}
-        <View style={styles.note}>
-          <View style={styles.noteLeft} />
-          <View>
-            <Text style={styles.noteText}>
-              {navigation.state.params.detail.note}
-            </Text>
-            <Text style={styles.noteText}>
-              {navigation.state.params.detail.noteCN}
-            </Text>
+        {navigation.state.params.detail.note ? (
+          <View style={styles.note}>
+            <View style={styles.noteLeft} />
+            <View>
+              <Text style={styles.noteText}>
+                {navigation.state.params.detail.note}
+              </Text>
+              <Text style={styles.noteText}>
+                {navigation.state.params.detail.noteCN}
+              </Text>
+            </View>
           </View>
-        </View>
+        ) : null}
         {/* 组件效果展示 */}
         <View>
           <View style={styles.exampleTitle}>
@@ -66,7 +68,7 @@ export default class Detail extends Component {
             </TouchableOpacity>
           </View>
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }

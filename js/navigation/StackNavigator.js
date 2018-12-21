@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 14:56:38
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-21 15:41:40
+ * @Last Modified time: 2018-12-21 16:43:56
  */
 
 'use strict';
@@ -21,6 +21,7 @@ import DrawerLayoutAndroid from '../containers/components/example/DrawerLayoutAn
 import FlatList from '../containers/components/example/FlatList';
 import Image from '../containers/components/example/Image';
 import ImageBackground from '../containers/components/example/ImageBackground';
+import InputAccessoryView from '../containers/components/example/InputAccessoryView';
 
 const StackNavigator = createStackNavigator({
   TabNavigator: {
@@ -49,6 +50,9 @@ const StackNavigator = createStackNavigator({
   },
   ImageBackground: {
     screen: ImageBackground
+  },
+  InputAccessoryView: {
+    screen: InputAccessoryView
   }
 }, {
   headerLayoutPreset: 'center'
