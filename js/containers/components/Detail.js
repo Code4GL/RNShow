@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-19 17:46:15
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-21 13:53:31
+ * @Last Modified time: 2018-12-21 13:57:52
  */
 
 'use strict';
@@ -47,7 +47,10 @@ export default class Detail extends Component {
             <Text style={styles.exampleTitleText}>Example</Text>
           </View>
           <View style={styles.showExampleView}>
-            <TouchableOpacity style={styles.showExample} onPress={() => { navigation.navigate(navigation.state.params.detail.route) ; }}>
+            <TouchableOpacity
+              style={styles.showExample}
+              onPress={() => { navigation.navigate(navigation.state.params.detail.route) ; }}
+            >
               <Text style={styles.showExampleText}>{navigation.state.params.detail.name}</Text>
             </TouchableOpacity>
           </View>
