@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-19 17:46:15
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-20 15:05:25
+ * @Last Modified time: 2018-12-21 10:53:18
  */
 
 'use strict';
@@ -23,20 +23,22 @@ export default class Detail extends Component {
         </View>
         {/* 中英文描述 */}
         <View>
-          <View>
-            <Text>
+          <View style={styles.description}>
+            <Text style={styles.descriptionText}>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               {navigation.state.params.detail.description}
             </Text>
           </View>
-          <View style={styles.translation}>
-            <View style={styles.translationTitle}>
-              <Text style={styles.translationText}>翻译：</Text>
-            </View>
-            <Text>
+          <View style={styles.descriptionCN}>
+            <View style={styles.descriptionCNCell}>
+              <View style={styles.translationTitle}>
+                <Text style={styles.translationText}>翻译：</Text>
+              </View>
+              <Text style={styles.descriptionCNText}>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              {navigation.state.params.detail.descriptionCN}
-            </Text>
+                {navigation.state.params.detail.descriptionCN}
+              </Text>
+            </View>
           </View>
         </View>
         {/* 组件效果展示 */}
@@ -44,9 +46,11 @@ export default class Detail extends Component {
           <View style={styles.exampleTitle}>
             <Text style={styles.exampleTitleText}>Example</Text>
           </View>
-          <TouchableOpacity>
-            <Text>{navigation.state.params.detail.name}</Text>
-          </TouchableOpacity>
+          <View style={styles.showExampleView}>
+            <TouchableOpacity style={styles.showExample}>
+              <Text style={styles.showExampleText}>{navigation.state.params.detail.name}</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     );
@@ -62,13 +66,29 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   titleText: {
-    fontSize: 35,
+    fontSize: 25,
     padding: 10,
     fontWeight: 'bold',
     color: 'rgba(0,81,102,1)'
   },
-  translation: {
-    backgroundColor: 'lightgray'
+  description: {
+
+  },
+  descriptionText: {
+    padding: 10,
+    lineHeight: 20
+  },
+  descriptionCN: {
+    alignItems: 'center'
+  },
+  descriptionCNCell: {
+    width: '97%',
+    borderRadius: 5,
+    backgroundColor: 'rgba(228,231,236,0.8)'
+  },
+  descriptionCNText: {
+    padding: 5,
+    lineHeight: 20
   },
   translationTitle: {
     justifyContent: 'center'
@@ -86,5 +106,21 @@ const styles = StyleSheet.create({
     padding: 5,
     fontWeight: 'bold',
     color: 'rgba(0,81,102,1)'
+  },
+  showExampleView: {
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  showExample: {
+    borderRadius: 10,
+    backgroundColor: 'rgba(50,160,248,1)'
+  },
+  showExampleText: {
+    paddingTop: 10,
+    paddingLeft: 50,
+    paddingRight: 50,
+    paddingBottom: 10,
+    color: 'white',
+    fontWeight: 'bold'
   }
 });
