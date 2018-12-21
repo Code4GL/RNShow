@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 14:56:38
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-21 16:43:56
+ * @Last Modified time: 2018-12-21 17:32:23
  */
 
 'use strict';
@@ -22,6 +22,8 @@ import FlatList from '../containers/components/example/FlatList';
 import Image from '../containers/components/example/Image';
 import ImageBackground from '../containers/components/example/ImageBackground';
 import InputAccessoryView from '../containers/components/example/InputAccessoryView';
+import KeyboardAvoidingView from '../containers/components/example/KeyboardAvoidingView';
+import ListView from '../containers/components/example/ListView';
 
 const StackNavigator = createStackNavigator({
   TabNavigator: {
@@ -53,6 +55,12 @@ const StackNavigator = createStackNavigator({
   },
   InputAccessoryView: {
     screen: InputAccessoryView
+  },
+  KeyboardAvoidingView: {
+    screen: KeyboardAvoidingView
+  },
+  ListView: {
+    screen: ListView
   }
 }, {
   headerLayoutPreset: 'center'
