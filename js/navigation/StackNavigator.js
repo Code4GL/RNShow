@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 14:56:38
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-21 15:24:21
+ * @Last Modified time: 2018-12-21 15:41:40
  */
 
 'use strict';
@@ -20,6 +20,7 @@ import DatePickerIOS from '../containers/components/example/DatePickerIOS';
 import DrawerLayoutAndroid from '../containers/components/example/DrawerLayoutAndroid';
 import FlatList from '../containers/components/example/FlatList';
 import Image from '../containers/components/example/Image';
+import ImageBackground from '../containers/components/example/ImageBackground';
 
 const StackNavigator = createStackNavigator({
   TabNavigator: {
@@ -45,6 +46,9 @@ const StackNavigator = createStackNavigator({
   },
   Image: {
     screen: Image
+  },
+  ImageBackground: {
+    screen: ImageBackground
   }
 }, {
   headerLayoutPreset: 'center'

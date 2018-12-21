@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-19 17:46:15
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-21 13:57:52
+ * @Last Modified time: 2018-12-21 16:10:33
  */
 
 'use strict';
@@ -21,24 +21,35 @@ export default class Detail extends Component {
         <View style={styles.title}>
           <Text style={styles.titleText}>{navigation.state.params.detail.name}</Text>
         </View>
-        {/* 中英文描述 */}
-        <View>
-          <View style={styles.description}>
-            <Text style={styles.descriptionText}>
+        {/* 英文描述 */}
+        <View style={styles.description}>
+          <Text style={styles.descriptionText}>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              {navigation.state.params.detail.description}
+            {navigation.state.params.detail.description}
+          </Text>
+        </View>
+        {/* 中文描述 */}
+        <View style={styles.descriptionCN}>
+          <View style={styles.descriptionCNCell}>
+            <View style={styles.translationTitle}>
+              <Text style={styles.translationText}>翻译：</Text>
+            </View>
+            <Text style={styles.descriptionCNText}>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              {navigation.state.params.detail.descriptionCN}
             </Text>
           </View>
-          <View style={styles.descriptionCN}>
-            <View style={styles.descriptionCNCell}>
-              <View style={styles.translationTitle}>
-                <Text style={styles.translationText}>翻译：</Text>
-              </View>
-              <Text style={styles.descriptionCNText}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                {navigation.state.params.detail.descriptionCN}
-              </Text>
-            </View>
+        </View>
+        {/* 注意信息展示 */}
+        <View style={styles.note}>
+          <View style={styles.noteLeft} />
+          <View>
+            <Text style={styles.noteText}>
+              {navigation.state.params.detail.note}
+            </Text>
+            <Text style={styles.noteText}>
+              {navigation.state.params.detail.noteCN}
+            </Text>
           </View>
         </View>
         {/* 组件效果展示 */}
@@ -100,6 +111,19 @@ const styles = StyleSheet.create({
     color: 'green',
     padding: 5,
     fontWeight: 'bold'
+  },
+  noteLeft: {
+    width: '1%',
+    backgroundColor: 'rgba(255,227,121,1)'
+  },
+  note: {
+    flexDirection: 'row',
+    margin: 5,
+    backgroundColor: 'rgba(248,245,215,1)'
+  },
+  noteText: {
+    padding: 5,
+    lineHeight: 20
   },
   exampleTitle: {
     justifyContent: 'center'
