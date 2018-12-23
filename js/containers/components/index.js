@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 15:24:19
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-20 10:58:54
+ * @Last Modified time: 2018-12-23 23:40:57
  */
 
 'use strict';
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
   ItemSeparator: {
     height: 1,
-    width: '93%',
+    width: '95%',
     backgroundColor: 'rgba(230,230,230,1)'
   },
   ItemSeparatorCell: {

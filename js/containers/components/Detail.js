@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-19 17:46:15
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-21 16:13:18
+ * @Last Modified time: 2018-12-23 23:37:00
  */
 
 'use strict';
@@ -24,7 +24,7 @@ export default class Detail extends Component {
         {/* 英文描述 */}
         <View style={styles.description}>
           <Text style={styles.descriptionText}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <Text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Text>
             {navigation.state.params.detail.description}
           </Text>
         </View>
@@ -35,7 +35,7 @@ export default class Detail extends Component {
               <Text style={styles.translationText}>翻译：</Text>
             </View>
             <Text style={styles.descriptionCNText}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <Text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Text>
               {navigation.state.params.detail.descriptionCN}
             </Text>
           </View>

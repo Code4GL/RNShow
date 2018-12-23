@@ -16,6 +16,7 @@ module.exports = {
     },
     "rules": {
         // -----------手动添加开关-----------------
+        "react/no-multi-comp":"off",
         "react/prop-types":"off",
         "react/no-access-state-in-setstate":"off",
         "react/prefer-stateless-function":"off",
