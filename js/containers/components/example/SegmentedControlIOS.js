@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-23 22:23:59
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-23 22:27:05
+ * @Last Modified time: 2018-12-24 10:10:34
  */
 
 'use strict';
@@ -15,7 +15,7 @@ export default class SegmentedControlIOSScreen extends Component {
   constructor () {
     super();
     this.state = {
-      selectedIndex: ''
+      selectedIndex: 0
     };
   }
 

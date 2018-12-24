@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-23 23:31:22
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-23 23:38:49
+ * @Last Modified time: 2018-12-24 10:25:04
  */
 
 'use strict';
@@ -17,7 +17,6 @@ export default class WebViewScreen extends Component {
       <View style={styles.container}>
         <WebView
           source={{uri: 'https://www.baidu.com'}}
-          style={{marginTop: 20}}
         />
       </View>);
   }
