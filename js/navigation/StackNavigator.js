@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 14:56:38
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-23 23:35:02
+ * @Last Modified time: 2018-12-27 10:17:41
  */
 
 'use strict';
@@ -53,6 +53,9 @@ import View from '../containers/components/example/View';
 import ViewPagerAndroid from '../containers/components/example/ViewPagerAndroid';
 import VirtualizedList from '../containers/components/example/VirtualizedList';
 import WebView from '../containers/components/example/WebView ';
+
+import ApiDetail from '../containers/apis/Detail';
+import AccessibilityInfo from '../containers/apis/example/AccessibilityInfo';
 
 const StackNavigator = createStackNavigator({
   TabNavigator: {
@@ -177,6 +180,13 @@ const StackNavigator = createStackNavigator({
   },
   WebView: {
     screen: WebView
+  },
+  // -----------------APIs------------------
+  ApiDetail: {
+    screen: ApiDetail
+  },
+  AccessibilityInfo: {
+    screen: AccessibilityInfo
   }
 }, {
   headerLayoutPreset: 'center'

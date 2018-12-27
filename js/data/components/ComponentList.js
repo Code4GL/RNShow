@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 16:11:47
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-23 23:30:52
+ * @Last Modified time: 2018-12-27 10:05:10
  */
 
 'use strict';
@@ -13,6 +13,8 @@
  * @param {String} name 组件名称
  * @param {String} description 英文描述
  * @param {String} descriptionCN 中文描述
+ * @param {String} note 注意项
+ * @param {String} noteCN 中文注意项
  * @param {String} route 详情路由
  * @param {String} platform 支持平台:all，ios，android
  */
