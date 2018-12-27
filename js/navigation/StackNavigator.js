@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 14:56:38
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-27 10:55:24
+ * @Last Modified time: 2018-12-27 15:35:49
  */
 
 'use strict';
@@ -60,6 +60,30 @@ import ActionSheetIOS from '../containers/apis/example/ActionSheetIOS';
 import Alert from '../containers/apis/example/Alert';
 import AlertIOS from '../containers/apis/example/AlertIOS';
 import Animated from '../containers/apis/example/Animated';
+import AppRegistry from '../containers/apis/example/AppRegistry';
+import AppState from '../containers/apis/example/AppState';
+import AsyncStorage from '../containers/apis/example/AsyncStorage';
+import BackAndroid from '../containers/apis/example/BackAndroid';
+import BackHandler from '../containers/apis/example/BackHandler';
+import CameraRoll from '../containers/apis/example/CameraRoll';
+import DatePickerAndroid from '../containers/apis/example/DatePickerAndroid';
+import Dimensions from '../containers/apis/example/Dimensions';
+import Easing from '../containers/apis/example/Easing';
+import Geolocation from '../containers/apis/example/Geolocation';
+import ImageEditor from '../containers/apis/example/ImageEditor';
+import ImagePickerIOS from '../containers/apis/example/ImagePickerIOS';
+import ImageStore from '../containers/apis/example/ImageStore';
+import ImageStyleProps from '../containers/apis/example/ImageStyleProps';
+import InteractionManager from '../containers/apis/example/InteractionManager';
+import Keyboard from '../containers/apis/example/Keyboard';
+import LayoutProps from '../containers/apis/example/LayoutProps';
+import LayoutAnimation from '../containers/apis/example/LayoutAnimation';
+import Linking from '../containers/apis/example/Linking';
+import ListViewDataSource from '../containers/apis/example/ListViewDataSource';
+import NetInfo from '../containers/apis/example/NetInfo';
+import PanResponder from '../containers/apis/example/PanResponder';
+import PermissionsAndroid from '../containers/apis/example/PermissionsAndroid';
+import PixelRatio from '../containers/apis/example/PixelRatio';
 
 const StackNavigator = createStackNavigator({
   TabNavigator: {
@@ -204,6 +228,78 @@ const StackNavigator = createStackNavigator({
   },
   Animated: {
     screen: Animated
+  },
+  AppRegistry: {
+    screen: AppRegistry
+  },
+  AppState: {
+    screen: AppState
+  },
+  AsyncStorage: {
+    screen: AsyncStorage
+  },
+  BackAndroid: {
+    screen: BackAndroid
+  },
+  BackHandler: {
+    screen: BackHandler
+  },
+  CameraRoll: {
+    screen: CameraRoll
+  },
+  DatePickerAndroid: {
+    screen: DatePickerAndroid
+  },
+  Dimensions: {
+    screen: Dimensions
+  },
+  Easing: {
+    screen: Easing
+  },
+  Geolocation: {
+    screen: Geolocation
+  },
+  ImageEditor: {
+    screen: ImageEditor
+  },
+  ImagePickerIOS: {
+    screen: ImagePickerIOS
+  },
+  ImageStore: {
+    screen: ImageStore
+  },
+  ImageStyleProps: {
+    screen: ImageStyleProps
+  },
+  InteractionManager: {
+    screen: InteractionManager
+  },
+  Keyboard: {
+    screen: Keyboard
+  },
+  LayoutProps: {
+    screen: LayoutProps
+  },
+  LayoutAnimation: {
+    screen: LayoutAnimation
+  },
+  Linking: {
+    screen: Linking
+  },
+  ListViewDataSource: {
+    screen: ListViewDataSource
+  },
+  NetInfo: {
+    screen: NetInfo
+  },
+  PanResponder: {
+    screen: PanResponder
+  },
+  PermissionsAndroid: {
+    screen: PermissionsAndroid
+  },
+  PixelRatio: {
+    screen: PixelRatio
   }
 }, {
   headerLayoutPreset: 'center'
