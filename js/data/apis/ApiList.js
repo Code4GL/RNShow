@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 16:12:51
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-27 15:35:29
+ * @Last Modified time: 2018-12-27 16:33:43
  */
 
 'use strict';
@@ -62,20 +62,20 @@ const ApiList = [
   ListCell('28', 'PanResponder', 'PanResponder reconciles several touches into a single gesture. It makes single-touch gestures resilient to extra touches, and can be used to recognize simple multi-touch gestures.By default, PanResponder holds an InteractionManager handle to block long-running JS events from interrupting active gestures.It provides a predictable wrapper of the responder handlers provided by the gesture responder system. For each handler, it provides a new gestureState object alongside the native event object:onPanResponderMove: (event, gestureState) => {}.', 'PanResponder将多个触摸调和为一个手势。 它使单触手势能够适应额外的触摸，并可用于识别简单的多点触控手势。默认情况下，PanResponder持有一个InteractionManager句柄来阻止长时间运行的JS事件中断活动手势。它提供了一个可预测的包装器 响应者处理程序由手势响应者系统提供。 对于每个处理程序，它在本机事件对象旁边提供一个新的gestureState对象：onPanResponderMove：（event，gestureState）=> {}。', '', '', 'PanResponder', 'all'),
   ListCell('29', 'PermissionsAndroid', "This API only works in projects made with react-native init or in those made with Create React Native App which have since ejected. For more information about ejecting, please see the guide on the Create React Native App repository.PermissionsAndroid provides access to Android M's new permissions model. The so-called 'normal' permissions are granted by default when the application is installed as long as they appear in AndroidManifest.xml. However, 'dangerous' permissions require a dialog prompt. You should use this module for those permissions.On devices before SDK version 23, the permissions are automatically granted if they appear in the manifest, so check and request should always resolve to PermissionsAndroid.RESULTS.GRANTED.If a user has previously turned off a permission that you prompt for, the OS will advise your app to show a rationale for needing the permission. The optional rationale argument will show a dialog prompt only if necessary - otherwise the normal permission prompt will appear.", '此API仅适用于使用react-native init或使用Create React Native App制作的项目，这些项目已经弹出。有关弹出的更多信息，请参阅Create React Native App repository的指南.PersmissionsAndroid提供对Android M新权限模型的访问。默认情况下，只要安装应用程序出现在AndroidManifest.xml中，就会授予所谓的“普通”权限。但是，“危险”权限需要对话框提示。您应该将此模块用于这些权限。在SDK版本23之前的设备上，如果权限出现在清单中，则会自动授予权限，因此检查和请求应始终解析为PermissionsAndroid.RESULTS.GRANTED。如果用户先前已关闭您提示的权限，操作系统会建议您的应用程序显示需要许可的理由。可选的基本原理参数仅在必要时显示对话框提示 - 否则将显示正常的权限提示。', '', '', 'PermissionsAndroid', 'android'),
   ListCell('30', 'PixelRatio', 'PixelRatio class gives access to the device pixel density.', 'PixelRatio类可以访问设备像素密度。', '', '', 'PixelRatio', 'all'),
-  ListCell('31', '', '', '', '', '', '', 'all'),
-  ListCell('32', '', '', '', '', '', '', 'all'),
-  ListCell('33', '', '', '', '', '', '', 'all'),
-  ListCell('34', '', '', '', '', '', '', 'all'),
-  ListCell('35', '', '', '', '', '', '', 'all'),
-  ListCell('36', '', '', '', '', '', '', 'all'),
-  ListCell('37', '', '', '', '', '', '', 'all'),
-  ListCell('38', '', '', '', '', '', '', 'all'),
-  ListCell('39', '', '', '', '', '', '', 'all'),
-  ListCell('40', '', '', '', '', '', '', 'all'),
-  ListCell('41', '', '', '', '', '', '', 'all'),
-  ListCell('42', '', '', '', '', '', '', 'all'),
-  ListCell('43', '', '', '', '', '', '', 'all'),
-  ListCell('44', '', '', '', '', '', '', 'all')
+  ListCell('31', 'PushNotificationIOS', 'This section only applies to projects made with react-native init or to those made with Create React Native App which have since ejected. For more information about ejecting, please see the guide on the Create React Native App repository.Handle push notifications for your app, including permission handling and icon badge number.To get up and running, configure your notifications with Apple and your server-side system.', '本节仅适用于使用react-native init或使用Create React Native App制作的项目，这些项目已经弹出。 有关弹出的更多信息，请参阅创建React Native App存储库的指南。为您的应用程序处理推送通知，包括权限处理和图标徽章编号。要启动并运行，请使用Apple和服务器端系统配置通知。', '', '', 'PushNotificationIOS', 'ios'),
+  ListCell('32', 'Settings', 'Settings serves as a wrapper for NSUserDefaults, a persistent key-value store available only on iOS.', 'Settings用作NSUserDefaults的包装器，NSUserDefaults是一个仅在iOS上可用的持久键值存储。', '', '', 'Settings', 'all'),
+  ListCell('33', 'ShadowProps', 'No Description.', '没有描述。', '', '', 'ShadowProps', 'all'),
+  ListCell('34', 'Share', 'No Description.', '没有描述。', '', '', 'Share', 'all'),
+  ListCell('35', 'StatusBarIOS', 'Use StatusBar for mutating the status bar.', '使用StatusBar来改变状态栏。', '', '', 'StatusBarIOS', 'ios'),
+  ListCell('36', 'StyleSheet', 'A StyleSheet is an abstraction similar to CSS StyleSheets.', 'StyleSheet是一种类似于CSS StyleSheets的抽象。', '', '', 'StyleSheet', 'all'),
+  ListCell('37', 'Systrace', 'No Description.', '没有描述。', '', '', 'Systrace', 'all'),
+  ListCell('38', 'TextStyleProps', 'No Description.', '没有描述。', '', '', 'TextStyleProps', 'all'),
+  ListCell('39', 'TimePickerAndroid', 'Opens the standard Android time picker dialog.', '打开标准的Android时间选择器对话框。', '', '', 'TimePickerAndroid', 'android'),
+  ListCell('40', 'ToastAndroid', 'This exposes the native ToastAndroid module as a JS module. ', '这将本机ToastAndroid模块公开为JS模块。 ', '', '', 'ToastAndroid', 'android'),
+  ListCell('41', 'Transforms', 'No Description.', '没有描述。', '', '', 'Transforms', 'all'),
+  ListCell('42', 'Vibration', 'The Vibration API is exposed at Vibration.vibrate(). The vibration is asynchronous so this method will return immediately.There will be no effect on devices that do not support Vibration, eg. the simulator.Note for Android: add <uses-permission android:name="android.permission.VIBRATE"/> to AndroidManifest.xmlThe vibration duration in iOS is not configurable, so there are some differences with Android. In Android, if pattern is a number, it specifies the vibration duration in ms. If pattern is an array, those odd indices are the vibration duration, while the even ones are the separation time.In iOS, invoking vibrate(duration) will just ignore the duration and vibrate for a fixed time. While the pattern array is used to define the duration between each vibration. See below example for more.Repeatable vibration is also supported, the vibration will repeat with defined pattern until cancel() is called.', 'Vibration API在Vibration.vibrate（）中公开。 振动是异步的，因此该方法将立即返回。对不支持振动的设备没有影响，例如。 simulator.Note for Android：将<uses-permission android：name =“android.permission.VIBRATE”/>添加到AndroidManifest.xml.iOS中的振动持续时间不可配置，因此与Android存在一些差异。 在Android中，如果pattern是数字，则以ms为单位指定振动持续时间。 如果pattern是一个数组，那些奇数索引是振动持续时间，而偶数索引是分离时间。在iOS中，调用振动（持续时间）将忽略持续时间并在固定时间内振动。 虽然模式阵列用于定义每个振动之间的持续时间。 有关更多可重复振动的信息，请参见下面的示例。振动将以定义的模式重复，直到调用cancel（）。', '', '', 'Vibration', 'all'),
+  ListCell('43', 'VibrationIOS', 'NOTE: VibrationIOS is being deprecated. Use Vibration instead.The Vibration API is exposed at VibrationIOS.vibrate(). On iOS, calling this function will trigger a one second vibration. The vibration is asynchronous so this method will return immediately.There will be no effect on devices that do not support Vibration, eg. the iOS simulator.Vibration patterns are currently unsupported.', 'NOTE: VibrationIOS is being deprecated. Use Vibration instead.The Vibration API is exposed at VibrationIOS.vibrate(). On iOS, calling this function will trigger a one second vibration. The vibration is asynchronous so this method will return immediately.There will be no effect on devices that do not support Vibration, eg. the iOS simulator.Vibration patterns are currently unsupported.', '', '', 'VibrationIOS', 'ios'),
+  ListCell('44', 'ViewStyleProps', 'No Description.', '没有描述。', '', '', 'ViewStyleProps', 'all')
 ];
 
 export default ApiList;

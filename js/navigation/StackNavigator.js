@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 14:56:38
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-27 15:35:49
+ * @Last Modified time: 2018-12-27 16:34:23
  */
 
 'use strict';
@@ -84,6 +84,20 @@ import NetInfo from '../containers/apis/example/NetInfo';
 import PanResponder from '../containers/apis/example/PanResponder';
 import PermissionsAndroid from '../containers/apis/example/PermissionsAndroid';
 import PixelRatio from '../containers/apis/example/PixelRatio';
+import PushNotificationIOS from '../containers/apis/example/PushNotificationIOS';
+import Settings from '../containers/apis/example/Settings';
+import ShadowProps from '../containers/apis/example/ShadowProps';
+import Share from '../containers/apis/example/Share';
+import StatusBarIOS from '../containers/apis/example/StatusBarIOS';
+import StyleSheet from '../containers/apis/example/StyleSheet';
+import Systrace from '../containers/apis/example/Systrace';
+import TextStyleProps from '../containers/apis/example/TextStyleProps';
+import TimePickerAndroid from '../containers/apis/example/TimePickerAndroid';
+import ToastAndroid from '../containers/apis/example/ToastAndroid';
+import Transforms from '../containers/apis/example/Transforms';
+import Vibration from '../containers/apis/example/Vibration';
+import VibrationIOS from '../containers/apis/example/VibrationIOS';
+import ViewStyleProps from '../containers/apis/example/ViewStyleProps';
 
 const StackNavigator = createStackNavigator({
   TabNavigator: {
@@ -300,6 +314,48 @@ const StackNavigator = createStackNavigator({
   },
   PixelRatio: {
     screen: PixelRatio
+  },
+  PushNotificationIOS: {
+    screen: PushNotificationIOS
+  },
+  Settings: {
+    screen: Settings
+  },
+  ShadowProps: {
+    screen: ShadowProps
+  },
+  Share: {
+    screen: Share
+  },
+  StatusBarIOS: {
+    screen: StatusBarIOS
+  },
+  StyleSheet: {
+    screen: StyleSheet
+  },
+  Systrace: {
+    screen: Systrace
+  },
+  TextStyleProps: {
+    screen: TextStyleProps
+  },
+  TimePickerAndroid: {
+    screen: TimePickerAndroid
+  },
+  ToastAndroid: {
+    screen: ToastAndroid
+  },
+  Transforms: {
+    screen: Transforms
+  },
+  Vibration: {
+    screen: Vibration
+  },
+  VibrationIOS: {
+    screen: VibrationIOS
+  },
+  ViewStyleProps: {
+    screen: ViewStyleProps
   }
 }, {
   headerLayoutPreset: 'center'
