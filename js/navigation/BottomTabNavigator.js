@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 14:59:33
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-27 10:01:48
+ * @Last Modified time: 2018-12-27 10:31:04
  */
 
 'use strict';
@@ -31,7 +31,7 @@ const BottomTabNavigator = createBottomTabNavigator({
     screen: About
   }
 }, {
-  initialRouteName: 'Components'
+  initialRouteName: 'APIs'
 });
 
 export default createAppContainer(BottomTabNavigator);

@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 14:56:38
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-27 10:17:41
+ * @Last Modified time: 2018-12-27 10:55:24
  */
 
 'use strict';
@@ -56,11 +56,16 @@ import WebView from '../containers/components/example/WebView ';
 
 import ApiDetail from '../containers/apis/Detail';
 import AccessibilityInfo from '../containers/apis/example/AccessibilityInfo';
+import ActionSheetIOS from '../containers/apis/example/ActionSheetIOS';
+import Alert from '../containers/apis/example/Alert';
+import AlertIOS from '../containers/apis/example/AlertIOS';
+import Animated from '../containers/apis/example/Animated';
 
 const StackNavigator = createStackNavigator({
   TabNavigator: {
     screen: TabNavigator
   },
+  // -----------Components-----------------
   ComponentDetail: {
     screen: ComponentDetail
   },
@@ -187,6 +192,18 @@ const StackNavigator = createStackNavigator({
   },
   AccessibilityInfo: {
     screen: AccessibilityInfo
+  },
+  ActionSheetIOS: {
+    screen: ActionSheetIOS
+  },
+  Alert: {
+    screen: Alert
+  },
+  AlertIOS: {
+    screen: AlertIOS
+  },
+  Animated: {
+    screen: Animated
   }
 }, {
   headerLayoutPreset: 'center'
