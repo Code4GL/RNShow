@@ -2,19 +2,28 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 15:24:58
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-27 10:14:59
+ * @Last Modified time: 2018-12-30 13:39:10
  */
 
 'use strict';
 
 import React, {Component} from 'react';
 import {
-  StyleSheet, FlatList, View, Platform, Alert
+  StyleSheet, FlatList, View, Platform, Alert, Image
 } from 'react-native';
 import ComponentListCell from '../../components/component/ComponentListCell';
 import ApiList from '../../data/apis/ApiList';
 
+const image = require('./../../image/icon/process.png');
+const imageSelected = require('./../../image/icon/process-selected.png');
+
 export default class Index extends Component {
+
+  static navigationOptions = {
+    tabBarIcon: ({focused}) => (
+      <Image style={styles.tabBarIcon} source={focused ? imageSelected : image} />
+    )
+  };
 
   creatItemSeparator () {
     return (
@@ -73,5 +82,9 @@ const styles = StyleSheet.create({
   ItemSeparatorCell: {
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  tabBarIcon: {
+    height: 20,
+    width: 20
   }
 });

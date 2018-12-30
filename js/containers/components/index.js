@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 15:24:19
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-29 11:19:33
+ * @Last Modified time: 2018-12-30 13:34:56
  */
 
 'use strict';
@@ -14,19 +14,15 @@ import {
 import ComponentListCell from '../../components/component/ComponentListCell';
 import ComponentList from '../../data/components/ComponentList';
 
+const image = require('./../../image/icon/electronics.png');
+const imageSelected = require('./../../image/icon/electronics-selected.png');
+
 export default class Index extends Component {
 
   static navigationOptions = {
-    tabBarIcon: ({focused}) => {
-      if (focused) {
-        return (
-          <Image style={styles.tabBarIcon} source={require('./../../image/icon/electronics-selected.png')} />
-        );
-      }
-      return (
-        <Image style={styles.tabBarIcon} source={require('./../../image/icon/electronics.png')} />
-      );
-    }
+    tabBarIcon: ({focused}) => (
+      <Image style={styles.tabBarIcon} source={focused ? imageSelected : image} />
+    )
   };
 
   creatItemSeparator () {
