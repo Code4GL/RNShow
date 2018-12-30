@@ -2,19 +2,32 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 15:24:19
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-23 23:40:57
+ * @Last Modified time: 2018-12-29 11:19:33
  */
 
 'use strict';
 
 import React, {Component} from 'react';
 import {
-  StyleSheet, FlatList, View, Platform, Alert
+  StyleSheet, FlatList, View, Platform, Alert, Image
 } from 'react-native';
 import ComponentListCell from '../../components/component/ComponentListCell';
 import ComponentList from '../../data/components/ComponentList';
 
 export default class Index extends Component {
+
+  static navigationOptions = {
+    tabBarIcon: ({focused}) => {
+      if (focused) {
+        return (
+          <Image style={styles.tabBarIcon} source={require('./../../image/icon/electronics-selected.png')} />
+        );
+      }
+      return (
+        <Image style={styles.tabBarIcon} source={require('./../../image/icon/electronics.png')} />
+      );
+    }
+  };
 
   creatItemSeparator () {
     return (
@@ -73,5 +86,9 @@ const styles = StyleSheet.create({
   ItemSeparatorCell: {
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  tabBarIcon: {
+    height: 20,
+    width: 20
   }
 });
