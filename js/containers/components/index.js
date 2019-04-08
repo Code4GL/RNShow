@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 15:24:19
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-30 13:34:56
+ * @Last Modified time: 2019-04-08 16:14:09
  */
 
 'use strict';
@@ -14,8 +14,8 @@ import {
 import ComponentListCell from '../../components/component/ComponentListCell';
 import ComponentList from '../../data/components/ComponentList';
 
-const image = require('./../../image/icon/electronics.png');
-const imageSelected = require('./../../image/icon/electronics-selected.png');
+const image = require('./../../image/tabs/electronics.png');
+const imageSelected = require('./../../image/tabs/electronics-selected.png');
 
 export default class Index extends Component {
 

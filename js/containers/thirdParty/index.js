@@ -2,7 +2,7 @@
  * @Author: Code4GL
  * @Date: 2018-12-17 15:24:06
  * @Last Modified by: Code4GL
- * @Last Modified time: 2018-12-30 13:40:34
+ * @Last Modified time: 2019-04-08 16:14:22
  */
 
 'use strict';
@@ -12,8 +12,8 @@ import {
   StyleSheet, Text, View, Image
 } from 'react-native';
 
-const image = require('./../../image/icon/box.png');
-const imageSelected = require('./../../image/icon/box-selected.png');
+const image = require('./../../image/tabs/box.png');
+const imageSelected = require('./../../image/tabs/box-selected.png');
 
 export default class Index extends Component {
 
