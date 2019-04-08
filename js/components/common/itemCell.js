@@ -1,5 +1,8 @@
-/**
- * 个人中心点击项
+/*
+ * @Author: Code4GL
+ * @Date: 2019-04-08 17:46:54
+ * @Last Modified by: Code4GL
+ * @Last Modified time: 2019-04-08 17:47:14
  */
 
 'use strict';
